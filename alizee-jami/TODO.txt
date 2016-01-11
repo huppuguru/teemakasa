@@ -1,0 +1,26 @@
+TODO
+
+
+
+
+- teeman lokalisointi
+  tsekkaa, että kaikki toimii suomeksi
+
+- logo-kuvan laitto vasempaan ylänurkkaan, eikä headerin keskelle
+- logo-kuvan laitto ei poista blogin otsikkoa ja kuvausta
+
+- fontit
+- pari child-teemaa, joissa vaan eri fontit, ja ehkä värit
+- värinvaihtomahdollisuus valikkoon ja taustavärille
+
+
+- ylälaidan navigaatio uusiks
+- responsiivinen menu: ei sais olla ruma harmaa nappula
+
+- oikean laidan + (toiminto) pois
+- alalaitaan arkisto ja META
+
+- oikeaan laitaan ylös ainakin etusivulle näkyviin
+  - tietoja journalisteista 
+    nimi, yhteystiedot, kartta, puhelin, kasvokuva jne.
+
