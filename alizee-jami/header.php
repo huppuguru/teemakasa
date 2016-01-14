@@ -33,6 +33,11 @@
 	<header id="masthead" class="site-header" role="banner">
 <?php endif; ?>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php if ( get_theme_mod('site_logo') ) : ?>
+					<div class="site-logo">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php bloginfo('name'); ?>" /></a>
+					</div>
+				<?php endif; ?>
 			<div class="container">
 				<button class="menu-toggle btn"><i class="fa fa-bars"></i></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
@@ -40,13 +45,9 @@
 		</nav><!-- #site-navigation -->
 		<div class="container">
 			<div class="site-branding">
-				<?php if ( get_theme_mod('site_logo') ) : ?>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php bloginfo('name'); ?>" /></a>
-				<?php else : ?>
-					<?php if ( display_header_text() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-					<?php endif; ?>
+				<?php if ( display_header_text() ) : ?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				<?php endif; ?>
 			</div>
 		</div>

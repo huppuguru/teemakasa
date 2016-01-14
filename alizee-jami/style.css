@@ -36,6 +36,10 @@ Alizee is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic,
 13.0 - Responsive
 --------------------------------------------------------------*/
 
+
+
+
+
 /*--------------------------------------------------------------
 1.0 General
 --------------------------------------------------------------*/
@@ -1248,3 +1252,24 @@ object {
 		box-shadow: none;
 	}	
 }
+
+/* @jami */
+.site-logo {
+	position: absolute;
+}
+.site-logo img {
+	max-height: 73px;
+}
+.has-banner .main-navigation li {
+    padding: 24px 10px;
+}
+.main-navigation li {
+    position: relative;
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.4s ease 0s;
+    font-weight: bold;
+}
+
