@@ -1023,10 +1023,6 @@ object {
 	text-shadow: 0 0 1px #000;
 }
 /* Singles */
-.content-area {
-	width: 750px;
-	float: left;
-}
 .widget-area {
 	width: 360px;
 	margin-bottom: 60px;
@@ -1218,10 +1214,6 @@ object {
 	color: #2a363b;
 }
 @media screen and (max-width: 991px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
 	.has-banner .main-navigation {
 		background-color: #3C3C3C;
 	}
@@ -1273,3 +1265,35 @@ object {
     font-weight: bold;
 }
 
+.content-area {
+	width: 750px;
+	float: none;
+	margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 1199px) {
+	.content-area {
+		width: 550px;
+	}	
+
+}
+@media screen and (max-width: 991px) {
+	.site-logo img {
+		max-height: 40px;
+	}
+
+
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+		float: right;
+		color: #ccc;
+		background: transparent;
+	}
+}
+
+.btn { 
+	background: #transparent;
+	border: 0px solid; 
+}

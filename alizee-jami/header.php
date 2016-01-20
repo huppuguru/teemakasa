@@ -51,9 +51,9 @@
 				<?php endif; ?>
 			</div>
 		</div>
-	<?php if ( is_home() ) : ?>
+	<?php /* if ( is_home() ) : ?>
 		<div class="sidebar-toggle"><i class="fa fa-plus"></i></div>
-	<?php endif; ?>
+	<?php endif; */ ?>
 	<?php if ( has_nav_menu( 'social' ) ) : ?>
 		<nav class="social-navigation clearfix">
 			<?php wp_nav_menu( array( 'theme_location' => 'social', 'link_before' => '<span class="screen-reader-text">', 'link_after' => '</span>', 'container_class' => 'container', 'menu_class' => 'menu clearfix', 'fallback_cb' => false ) ); ?>
